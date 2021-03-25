@@ -1,0 +1,357 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --table-padding: 0.5rem;
+    --dark-grey-color: #e1e1e1;
+    --grey-color: #f4f4f4;
+    --gray-text-color: grey;
+    --input-length: 12rem;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+html {
+    padding: 1rem;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+header nav {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 0.25rem;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    /*display: inline;*/
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.75rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+/*Task 1*/
+
+nav {
+    position: relative;
+}
+
+nav .search {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+}
+
+nav .search input {
+    background: var(--grey-color) url(../img/search-16x16.png) left center no-repeat;
+    background-size: contain;
+    padding: 0.1rem 0.1rem 0.1rem 2rem;
+}
+
+nav .search input {
+    outline: none;
+    border: 0.08rem solid var(--border-color);
+    border-radius: 0.4rem;
+}
+
+nav .search input:focus-within {
+    outline: none;
+    border: 0.1rem solid dodgerblue;
+    border-radius: 0.4rem;
+}
+
+/*Task 2*/
+
+main .datatable {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: var(--dark-grey-color);
+}
+
+main .datatable .caption {
+    padding: 0.25rem;
+    font-weight: bold;
+}
+
+main .datatable table {
+    width: 100%;
+}
+
+main .datatable tr {
+    text-align: center;
+}
+
+main .datatable th {
+    background: white;
+}
+
+main .datatable td,
+main .datatable th {
+    padding-top: var(--table-padding);
+    padding-bottom: var(--table-padding);
+}
+
+main .datatable tbody tr:nth-child(odd){
+    background-color: var(--grey-color);
+}
+
+main .datatable tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+/*Task 3*/
+
+
+main article .title {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+main article .information {
+    font-size: small;
+    color: var(--gray-text-color);
+}
+
+main article .body {
+    padding-left: 0.4rem;
+    border-left: 0.2rem solid var(--border-color);
+}
+
+main article ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+main article .attachment li {
+    list-style-image: url(../img/paperclip-16x16.png);
+    color: var(--gray-text-color);
+    font-size: small;
+}
+
+main article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.25rem 0.25rem;
+    overflow: hidden;
+}
+
+main article .footer .left {
+    float: left;
+    color: green;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+main article .footer .right {
+    float: right;
+    color: var(--gray-text-color);
+    margin: 0 0.5rem;
+}
+
+main article .footer .left * {
+    vertical-align: middle;
+}
+
+main article .footer .right img {
+    margin-left: 1rem;
+}
+
+main article .footer .right * {
+    vertical-align: middle;
+}
+
+/*Task 4*/
+
+main .login-form-box {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    width: 28rem;
+    margin: auto;
+    text-align: left;
+}
+
+main .login-form-box .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+main .login-form-box form > * {
+    margin: 1rem;
+}
+
+main .login-form-box .name {
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 1rem;
+    width: 10rem;
+}
+
+main .login-form-box .name,
+main .login-form-box .value
+{
+    display: inline-block;
+}
+
+main .login-form-box .checkbox-field,
+main .login-form-box .error,
+main .login-form-box .button-field {
+    display: inline-block;
+}
+
+main .login-form-box .checkbox-field:before,
+main .login-form-box .error:before,
+main .login-form-box .button-field:before {
+    content: "";
+    display: inline-block;
+    width: 10rem;
+}
+
+main .login-form-box .checkbox-field input {
+    appearance:none;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;;
+    background: #f4f4f4;
+    border: 0.5px solid var(--black-color);
+    outline: none;
+}
+
+main .login-form-box .checkbox-field input:checked {
+    appearance: revert;
+}
+
+
+main .login-form-box .error {
+    color: red;
+    font-size: 0.75rem;
+}
+
+main .login-form-box .button-field > * {
+    width: 6rem;
+}
+
+main .login-form-box .links {
+    text-align: right;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    margin: 0 0.5rem;
+}
+
+main .login-form-box .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+main .login-form-box .footer a {
+    float: right;
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+}

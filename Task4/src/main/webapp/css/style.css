@@ -1,0 +1,288 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+
+    --table-padding: 0.5rem;
+    --dark-grey-color: #e1e1e1;
+    --grey-color: #f4f4f4;
+    --gray-text-color: grey;
+    --input-length: 12rem;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+.middle {
+    display: flow-root;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--boder);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: var(--boder);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--boder);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--boder);
+    text-align: center;
+}
+
+/*User menu*/
+
+main .username {
+    text-decoration: none;
+}
+
+main .username.RED {
+    color: red;
+}
+
+main .username.GREEN{
+    color: green;
+}
+
+main .username.BLUE{
+    color: blue;
+}
+
+main .user-menu {
+    position: relative;
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+main .user-menu .header {
+    font-size: x-large;
+}
+
+main .user-menu .user-img {
+    position: absolute;
+    top: 50%;
+    right: 0.5%;
+    transform: translateY(-50%);
+}
+
+main .arrow {
+    display: inline-block;
+}
+
+main .able {
+    color: #3B5998;
+    text-decoration: none
+}
+
+main .disabled {
+    color: grey;
+}
+
+/*Underlined page in nav panel*/
+nav .underlined {
+    border-bottom: 3px solid #3B5998;
+}
+
+/*Not found*/
+main .error-code {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/*Task 2*/
+
+main .datatable {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    background: var(--dark-grey-color);
+}
+
+main .datatable .caption {
+    padding: 0.25rem;
+    font-weight: bold;
+}
+
+main .datatable table {
+    width: 100%;
+}
+
+main .datatable tr {
+    text-align: center;
+}
+
+main .datatable th {
+    background: white;
+}
+
+main .datatable td,
+main .datatable th {
+    padding-top: var(--table-padding);
+    padding-bottom: var(--table-padding);
+}
+
+main .datatable tbody tr:nth-child(odd){
+    background-color: var(--grey-color);
+}
+
+main .datatable tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+/*Task 3*/
+
+main article {
+    margin-bottom: 5rem;
+}
+
+main article .title {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--caption-color);
+    text-decoration: none;
+}
+
+main article .information,
+main article .information * {
+    font-size: small;
+    color: grey;
+}
+
+main article .body {
+    padding-left: 0.4rem;
+    border-left: 0.2rem solid var(--border-color);
+    margin: 1rem 0;
+}
+
+main article ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+main article .attachment li {
+    list-style-image: url(../img/paperclip-16x16.png);
+    color: grey;
+    font-size: small;
+}
+
+main article .footer {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.25rem 0.25rem;
+    overflow: hidden;
+}
+
+main article .footer .left {
+    float: left;
+    color: green;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+main article .footer .right {
+    float: right;
+    color: grey;
+    margin: 0 0.5rem;
+}
+
+main article .footer .left * {
+    vertical-align: middle;
+}
+
+main article .footer .right img {
+    margin-left: 1rem;
+}
+
+main article .footer .right * {
+    vertical-align: middle;
+}

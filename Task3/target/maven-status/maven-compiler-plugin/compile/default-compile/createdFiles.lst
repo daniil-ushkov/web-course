@@ -1,0 +1,6 @@
+ru/itmo/wp/servlet/DelayedHttpServletResponse$ServletOutputStreamWrapper.class
+ru/itmo/wp/servlet/GzipFilter.class
+ru/itmo/wp/util/ImageUtils.class
+ru/itmo/wp/servlet/DelayedHttpServletResponse$1.class
+ru/itmo/wp/servlet/DelayedHttpServletResponse.class
+ru/itmo/wp/servlet/StaticServlet.class
